@@ -1,0 +1,357 @@
+/* Pro Athlete Page Specific Styles */
+
+/* Hero Section */
+.athlete-hero {
+    position: relative;
+    height: 90vh;
+    min-height: 700px;
+    background-image: url('https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 34, 68, 0.85), rgba(212, 175, 55, 0.3));
+    z-index: 1;
+}
+
+.athlete-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    max-width: 900px;
+    animation: fadeIn 1.2s ease-out;
+}
+
+.athlete-hero h1 {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: var(--spacing-xl);
+    font-weight: 300;
+    opacity: 0.95;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.athlete-hero .btn {
+    font-size: 1.1rem;
+    padding: 18px 36px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Overview Section */
+.athlete-overview {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--white);
+}
+
+.overview-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-xl);
+}
+
+.overview-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.overview-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+.athlete-list {
+    margin-top: var(--spacing-md);
+}
+
+.athlete-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.check-icon {
+    color: var(--gold);
+    font-weight: bold;
+    margin-right: var(--spacing-sm);
+    font-size: 1.2rem;
+}
+
+.overview-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.overview-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Services Included Section */
+.services-included {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.service-item {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: var(--transition-standard);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--navy-gradient);
+    transform: scaleX(0);
+    transition: var(--transition-standard);
+}
+
+.service-item:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-item:hover::before {
+    transform: scaleX(1);
+}
+
+.service-icon {
+    margin-bottom: var(--spacing-md);
+}
+
+.service-icon img {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.service-item h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--navy);
+    font-size: 1.4rem;
+}
+
+.service-item p {
+    line-height: 1.7;
+    color: var(--dark-gray);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--white);
+}
+
+.why-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: var(--spacing-xl);
+}
+
+.why-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.expertise-points {
+    margin-top: var(--spacing-lg);
+}
+
+.point {
+    margin-bottom: var(--spacing-lg);
+    padding-left: var(--spacing-md);
+    border-left: 3px solid var(--gold);
+}
+
+.point h4 {
+    color: var(--navy);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.2rem;
+}
+
+.point p {
+    color: var(--dark-gray);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.why-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.why-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Athlete Stats Section */
+.athlete-stats {
+    padding: var(--spacing-xl) 0;
+    background: var(--navy-gradient);
+    color: var(--white);
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.stat-item h3 {
+    font-size: 3rem;
+    color: var(--gold);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 700;
+}
+
+.stat-item p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    opacity: 0.9;
+}
+
+/* CTA Section */
+.cta-athlete {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+.cta-athlete h2 {
+    color: var(--navy);
+    margin-bottom: var(--spacing-md);
+    font-size: 2.8rem;
+}
+
+.cta-athlete p {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-lg);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+    font-size: 1.1rem;
+    padding: 16px 32px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .athlete-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .overview-content,
+    .why-content {
+        flex-direction: column;
+    }
+    
+    .overview-text,
+    .overview-image,
+    .why-text,
+    .why-image {
+        flex: 0 0 100%;
+    }
+    
+    .cta-athlete h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .athlete-hero {
+        height: 80vh;
+        min-height: 600px;
+    }
+    
+    .athlete-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}

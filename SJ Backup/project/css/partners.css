@@ -1,0 +1,215 @@
+/* Partners Page Specific Styles */
+
+/* Partners Intro */
+.partners-intro {
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.partners-intro .container {
+    max-width: 800px;
+}
+
+.partners-intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark-gray);
+}
+
+/* Partners Grid */
+.partners-grid {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--light-gray);
+}
+
+.partners-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.partner-logo {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition-standard);
+    position: relative;
+    overflow: hidden;
+}
+
+.partner-logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+    transition: var(--transition-slow);
+}
+
+.partner-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.partner-logo:hover::before {
+    left: 100%;
+}
+
+.logo-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: var(--light-gray);
+    border: 2px dashed var(--medium-gray);
+    border-radius: var(--border-radius-sm);
+    color: var(--dark-gray);
+    font-weight: 500;
+    text-align: center;
+    transition: var(--transition-quick);
+}
+
+.partner-logo:hover .logo-placeholder {
+    border-color: var(--gold);
+    color: var(--navy);
+}
+
+.logo-placeholder span {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Partnership Benefits */
+.partnership-benefits {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.benefit-item {
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    transition: var(--transition-standard);
+}
+
+.benefit-item:hover {
+    background-color: var(--light-gray);
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    margin-bottom: var(--spacing-md);
+}
+
+.benefit-icon img {
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.benefit-item h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--navy);
+    font-size: 1.4rem;
+}
+
+.benefit-item p {
+    line-height: 1.7;
+    color: var(--dark-gray);
+    margin-bottom: 0;
+}
+
+/* Become Partner Section */
+.become-partner {
+    padding: var(--spacing-xxl) 0;
+    background: var(--navy-gradient);
+    color: var(--white);
+    text-align: center;
+}
+
+.become-partner h2 {
+    color: var(--white);
+    margin-bottom: var(--spacing-md);
+}
+
+.become-partner .divider {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    margin: 0 auto var(--spacing-md);
+}
+
+.become-partner p {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-lg);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+    opacity: 0.95;
+}
+
+.become-partner .btn-primary {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    color: var(--navy);
+    font-weight: 600;
+    padding: 16px 32px;
+    font-size: 1.1rem;
+}
+
+.become-partner .btn-primary:hover {
+    background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .partners-logos {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .partners-logos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+    
+    .partner-logo {
+        min-height: 100px;
+        padding: var(--spacing-md);
+    }
+    
+    .logo-placeholder {
+        height: 60px;
+    }
+    
+    .logo-placeholder span {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .partners-logos {
+        grid-template-columns: 1fr;
+    }
+}

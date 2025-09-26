@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | 7-7 Wealth Group</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <!-- Logo Image -->
+                <img src="images/7-7 wealth logo no background.PNG" alt="7-7 Wealth Group Logo">
+                <a href="index.html">7-7<span class="gold-dot"></span>Wealth Group</a>
+                <span class="consultancy-text"></span>
+            </div>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <!--<li><a href="about.html">About Us</a></li>-->
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="switzerland-exit.html">Switzerland Exit</a></li>
+                    <li><a href="pro-athlete.html">Pro Athlete</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <span>Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <div class="divider"></div>
+                    <p>We're here to answer any questions you may have about our services. Reach out to us and we'll respond as soon as we can.</p>
+                    
+                    <!--<div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/location-icon.svg" alt="Location">
+                        </div>
+                        <div class="info-content">
+                            <h3>Our Office</h3>
+                            <p>Rue Neuve-du-Molard 19</p>
+                            <p>1204 Geneve, Switzerland</p>
+                        </div>
+                    </div>-->
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/email-icon.svg" alt="Email">
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p></p>
+                            <p>7-7wealthgroup@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/phone-icon.svg" alt="Phone">
+                        </div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>+44 7488567776</p>
+                            <p>+41 41 508 70 11</p>
+                            <p>Mon-Fri: 9:00 AM - 5:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="contact-form">
+                    <h2>Book a Discovery Call</h2>
+                    <div class="divider"></div>
+
+                    <!-- Calendly inline widget -->
+                    <div class="calendly-wrapper">
+                        <div class="calendly-inline-widget"
+                            data-url="https://calendly.com/77wealthgroup/15min?
+                            hide_event_type_details=1&hide_gdpr_banner=1&primary_color=243b6a"
+                            style="min-width:320px;height:500px;">
+                        </div>
+                    </div>
+
+                    <div class="form-section-heading">
+                    <h2>Have an enquiry?</h2>
+                    <div class="divider"></div>
+
+                    <!-- Formspree form -->
+                    <div class="form-container">
+                    <form id="contactForm" action="https://formspree.io/f/xnnvorrz" method="POST">
+                        <div class="form-row">
+                            <div class="form-col">
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address*</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                            </div>
+                            
+                            <div class="form-col">
+
+                        <div class="form-group">
+                            <label for="service">Service of Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Please select...</option>
+                                <option value="Switzerland Exit Tax Planning">Swiss Exit</option>
+                                <option value="Life Insurance">Life Insurance</option>
+                                <option value="Mortgage Protection">Mortgage Protection</option>
+                                <option value="Income Protection">Income Protection</option>
+                                <option value="International Wealth Management">International Wealth Management</option>
+                                <option value="Private Equity">Private Equity</option>
+                                <option value="Pro Athlete Services">Pro Athlete Services</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message*</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I consent to 7-7 Wealth Group in assosiation Samuel.Jay Consultancy collecting and storing my data from this form.</label>
+                            <span class="error-message" id="consentError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit Message</button>
+                    </form>
+                    <div id="formSuccess" class="form-success">
+                        <h3>Thank you for contacting us!</h3>
+                        <p>Your message has been received. One of our advisors will be in touch with you shortly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<section class="map-section">
+        <div class="container">
+            <h2>Visit Our Office</h2>
+            <div class="divider"></div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9050207912896!2d-0.08983548479931628!3d51.51921101714834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cadd3bc07b3%3A0x9bb96e6e122e2a0!2sFinancial%20District%2C%20London%2C%20UK!5e0!3m2!1sen!2sus!4v1625123456789!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>-->
+
+    <footer>
+            <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-brand">
+                        <img src="images/7-7 wealth logo no background.PNG" alt="7-7 Wealth Group Logo" class="footer-logo-img">
+                        <a href="index.html" class="footer-text">
+                            7-7<span class="gold-dot"></span>Wealth Group
+                            <span class="consultancy-text"></span>
+                        </a>
+                    </div>
+                    <p>In association with Samuel Jay Consultancy Ltd</p>
+                    <p>Invest Wisely</p>
+                    <p>Protecting your financial future with expert guidance and personalized solutions.</p>
+                </div>
+
+        <!--<div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">7-7<span class="gold-dot"></span>Wealth Group</a>
+                    <p>In assosiation with Samuel Jay Consultancy ltd</p>
+                    <p>Invest Wisely</p>
+                    <p>Protecting your financial future with expert guidance and personalized solutions.</p>
+                </div>-->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <!--<li><a href="about.html">About Us</a></li>-->
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="switzerland-exit.html">Switzerland Exit</a></li>
+                        <li><a href="pro-athlete.html">Pro Athlete</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Rue Neuve-du-Molard 19</p>
+                    <p>1204 Geneve, Switzerland</p>
+                    <p>Email: 7-7wealthgroup@gmail.com</p>
+                    <p>Phone: +44 7488567776</p>
+                    <p>Phone: +41 41 508 70 11</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 7-7 Wealth Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>-->

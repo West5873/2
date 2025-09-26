@@ -1,0 +1,185 @@
+/* Contact Page Specific Styles */
+
+/* Contact Content */
+.contact-content {
+    padding: var(--spacing-xl) 0;
+}
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xl);
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form {
+    flex: 2;
+    min-width: 300px;
+}
+
+/* Contact Info */
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-lg);
+}
+
+.info-icon {
+    margin-right: var(--spacing-md);
+}
+
+.info-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.info-content h3 {
+    margin-bottom: 5px;
+    color: var(--navy);
+}
+
+.info-content p {
+    margin-bottom: 5px;
+    color: var(--dark-gray);
+}
+
+/* Contact Form */
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--medium-gray);
+    border-radius: var(--border-radius-sm);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--black);
+    transition: var(--transition-quick);
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--navy);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 34, 68, 0.1);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.error-message {
+    color: #d32f2f;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: none;
+}
+
+.form-success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    margin-top: var(--spacing-md);
+    display: none;
+}
+
+/* Form Layout */
+.form-container {
+    margin-top: var(--spacing-xl);
+}
+
+.form-section-heading {
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--black);
+}
+
+.form-row {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.form-col {
+    flex: 1;
+}
+
+/*Calendly widget styles*/
+.calendly-wrapper {
+    margin-top: 30px;
+    text-align: center;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.calendly-inline-widget {
+    border: 1px solid var(--gold);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    max-width: 900px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+
+/* Map Section */
+.map-section {
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.map-container {
+    margin-top: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .contact-grid {
+        flex-direction: column;
+    }
+    
+    .contact-info, .contact-form {
+        flex: 0 0 100%;
+    }
+    
+    .contact-info {
+        margin-bottom: var(--spacing-lg);
+    }
+
+        .form-row {
+       flex-direction: column;
+       gap: 0;
+   }
+   
+   .form-col {
+       flex: none;
+   }
+}
